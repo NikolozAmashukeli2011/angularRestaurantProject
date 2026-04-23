@@ -1,0 +1,64 @@
+
+header {
+min-height: 5vh;
+background-color: #ffffff;
+
+a {
+  text-decoration: none;
+  align-self: center;
+  color: black;
+  transition: 0.15s ease-in-out;
+}
+
+.cart-icon,
+.login-link {
+border-radius: 5px;
+padding: 0.5rem 0.75rem;
+
+&:hover {
+background-color: hsl(0, 0%, 98%);
+
+}
+}
+
+.sign-up-link {
+border-radius: 7px;
+background-color: #ff6b35;
+color: white;
+padding: 0.5rem 1rem;
+transition: 0.2s ease-in-out;
+
+&:hover {
+background-color:#f7931e;
+}
+}
+
+.header-left {
+a {
+&:hover {
+color: #ff6b35;
+}
+}
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 3rem;
+
+.header-right,
+.header-left {
+display: flex;
+gap: 16px;
+}
+
+.site-title {
+color:  #ff6b35;
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+}
+
+}
