@@ -32,3 +32,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+
+@mixin flex-column {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}

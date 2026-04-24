@@ -1,0 +1,115 @@
+@import 'variables';
+
+.footer-main {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2rem;
+max-width: 90%;
+justify-self: center;
+margin: 2rem 0;
+
+@media (max-width: 1024px) {
+grid-template-columns: repeat(3, 1fr);
+align-content: center;
+
+.footer-main-column {
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+& .footer-main-column:last-child {
+grid-column: 1 / -1;
+text-align: center;
+ align-items: center;
+}
+}
+
+@media (max-width: 768px) {
+grid-template-columns: 1fr;
+
+.subscribe-container {
+flex-direction: column;
+}
+}
+
+
+.media-icon,
+.footer-a {
+text-decoration: none !important;
+
+&:hover {
+color: $primary-orange !important;
+}
+}
+
+.site-title {
+color: $primary-orange;
+}
+
+.footer-text,
+.footer-main-column {
+display: flex;
+flex-direction: column;
+}
+
+.media-icons-container {
+margin-top: 0.5rem;
+flex-direction: row;
+gap: 1rem;
+}
+
+.subscribe-container {
+margin-top: 1rem;
+display: flex;
+gap: 1rem;
+width: 100%;
+
+.subscribe-input {
+background-color: #F3F3F3;
+border: 1px solid #F4F4F4;
+border-radius: 5px;
+outline: none;
+padding: 10px;
+transition: all 0.1s ease-in-out;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+flex: 1;
+min-width: 0;
+
+&:focus {
+border: 1px solid #F17561;
+box-shadow: 0 0 0 4px rgba(241, 117, 97, 0.2);
+}
+
+}
+
+.subscribe-btn {
+@include orange-btn;
+}
+}
+
+}
+
+.footer-bottom {
+border-top: 1px solid hsl(0, 0%, 80%);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+white-space: nowrap;
+
+.created-by-a {
+text-decoration: underline 1px solid black;
+}
+
+b {
+font-weight: bold;
+color: black;
+}
+
+.orange-footer-text {
+color: $primary-orange;
+font-weight: bold;
+}
+}
+

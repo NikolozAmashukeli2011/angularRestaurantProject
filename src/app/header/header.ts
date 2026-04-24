@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
-import { RouterModule } from "@angular/router";
+import { Component, HostListener } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterModule],
+  imports: [RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
-export class Header {}
+export class Header {
+isScrolled: boolean = false
+
+@HostListener('window:scroll', [])
+  onWindowScroll() {
+   this.isScrolled = window.scrollY > 50
+  }
+}
+

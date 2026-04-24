@@ -12,6 +12,12 @@ a {
   transition: 0.15s ease-in-out;
 }
 
+.sign-up-link,
+.login-link,
+.page-links {
+  margin: 0.25rem 0  0 1rem;
+}
+
 .cart-icon,
 .login-link {
 border-radius: 5px;
@@ -45,6 +51,8 @@ display: flex;
 gap: 16px;
 }
 
+
+
 .site-title {
 color: $primary-orange;
 font-weight: bold;
@@ -53,9 +61,28 @@ font-size: 1.5rem;
 
 }
 
+.cart-icon {
+font-size: 25px;
+}
+
 }
 @media (max-width: 991px) {
 .cart-icon {
 display: none;
 }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  background-color: white;
+
+&.scrolled {
+   background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
 }

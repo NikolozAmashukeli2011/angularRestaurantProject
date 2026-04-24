@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-lg">
+<header class="navbar navbar-expand-lg" [class.scrolled] ="isScrolled">
   <nav class="container">
 
     <span class="site-title">Foodie</span>
@@ -20,21 +20,22 @@
 
       <div class="offcanvas-body">
         <div class="header-left d-flex flex-column flex-lg-row">
-          <a routerLink="/" class="page-links p-2">Home</a>
-          <a routerLink="menu" class="page-links p-2">Menu</a>
+
+          <a routerLink="/" class="page-links ">Home</a>
+
+          <a routerLink="/menu" class="page-links ">Menu</a>
         </div>
 
         <div class="header-right ms-auto d-flex flex-column flex-lg-row align-items-lg-center gap-3">
 
-             <a routerLink="" class="cart-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-        </svg>
+      <a routerLink="" class="cart-icon">
+      <i class="bi bi-cart cart-icon"></i>
       </a>
 
           <a routerLink="" class="login-link p-2">Login</a>
           <a routerLink="" class="sign-up-link p-2">Sign Up</a>
         </div>
+
       </div>
 
     </div>
