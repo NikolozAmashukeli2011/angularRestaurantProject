@@ -1,7 +1,9 @@
+@import 'variables';
 
 header {
 min-height: 5vh;
 background-color: #ffffff;
+box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.1);
 
 a {
   text-decoration: none;
@@ -23,23 +25,25 @@ background-color: hsl(0, 0%, 98%);
 
 .sign-up-link {
 border-radius: 7px;
-background-color: #ff6b35;
+background-color: $primary-orange;
 color: white;
 padding: 0.5rem 1rem;
 transition: 0.2s ease-in-out;
 
 &:hover {
-background-color:#f7931e;
+background-color:$primary-yellow;
 }
 }
 
 .header-left {
 a {
 &:hover {
-color: #ff6b35;
+color: $primary-orange;
 }
 }
 }
+
+
 
 nav {
 display: flex;
@@ -54,11 +58,16 @@ gap: 16px;
 }
 
 .site-title {
-color:  #ff6b35;
+color: $primary-orange;
 font-weight: bold;
 font-size: 1.5rem;
 }
 
 }
 
+}
+@media (max-width: 991px) {
+.cart-icon {
+display: none;
+}
 }

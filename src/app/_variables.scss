@@ -1,0 +1,15 @@
+$primary-orange: #ff6b35;
+$primary-yellow: #f7931e;
+
+@mixin flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@mixin responsive-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, mimax(350px, 1fr));
+gap: 1rem;
+margin: 1rem 3rem;
+}
