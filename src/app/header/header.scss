@@ -24,15 +24,7 @@ background-color: hsl(0, 0%, 98%);
 }
 
 .sign-up-link {
-border-radius: 7px;
-background-color: $primary-orange;
-color: white;
-padding: 0.5rem 1rem;
-transition: 0.2s ease-in-out;
-
-&:hover {
-background-color:$primary-yellow;
-}
+@include orange-btn
 }
 
 .header-left {
@@ -43,13 +35,9 @@ color: $primary-orange;
 }
 }
 
-
-
 nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem 3rem;
+@include space-between;
+padding: 0.5rem 3rem;
 
 .header-right,
 .header-left {

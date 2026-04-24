@@ -1,6 +1,19 @@
 $primary-orange: #ff6b35;
 $primary-yellow: #f7931e;
 
+@mixin orange-btn {
+border: none;
+border-radius: 7px;
+background-color: $primary-orange;
+color: white;
+padding: 0.5rem 1rem;
+transition: 0.2s ease-in-out;
+
+&:hover {
+background-color:$primary-yellow;
+}
+}
+
 @mixin flex-center {
 display: flex;
 justify-content: center;
@@ -12,4 +25,10 @@ display: grid;
 grid-template-columns: repeat(auto-fit, mimax(350px, 1fr));
 gap: 1rem;
 margin: 1rem 3rem;
+}
+
+@mixin space-between {
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
