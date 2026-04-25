@@ -1,0 +1,54 @@
+@import 'variables';
+
+main {
+
+.story-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+margin: 1rem 2rem;
+gap: 2rem;
+padding: 2rem;
+width: auto;
+
+@media (max-width: 768px) {
+grid-template-columns: 1fr;
+.explore-menu-btn {
+align-self: center;
+}
+}
+
+@media (max-width: 768px) {
+padding: 0.5rem;
+margin: 0.5rem;
+
+.story-title {
+align-self: center;
+}
+}
+}
+
+.chef-container {
+display: flex;
+justify-content: center;
+
+.chef-img {
+max-width: 730px;
+max-height: 400px;
+object-fit: cover;
+height: 100%;
+width: 100%;
+border-radius: 10px;
+}
+}
+
+.story-text-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+
+.explore-menu-btn {
+@include orange-btn;
+}
+}
+}
