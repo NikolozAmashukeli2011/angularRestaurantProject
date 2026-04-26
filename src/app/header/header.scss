@@ -29,6 +29,10 @@ background-color: hsl(0, 0%, 98%);
 }
 }
 
+.cart-icon {
+padding: 0.25rem !important;
+}
+
 .sign-up-link {
 @include orange-btn
 }
@@ -50,8 +54,6 @@ padding: 0.5rem 3rem;
 display: flex;
 gap: 16px;
 }
-
-
 
 .site-title {
 color: $primary-orange;
